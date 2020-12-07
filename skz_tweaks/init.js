@@ -13,12 +13,12 @@ require(['dojo/_base/kernel', 'dojo/ready'], function  (dojo, ready) {
                     dojo.place(node, hlLeft);
                 });
                 // add filter buttons
-                q(".hl .right").forEach(function(node, index, array) {
+/*                q(".hl .right").forEach(function(node, index, array) {
                     if (q(".addToFilterLink", node).length > 0)
                         return;
                     var title = q("a.title", node.parentNode)[0].innerText;
                     dojo.place('<a href="rssFilter/submit.php?title=' + title + '" target="_blank" class="addToFilterLink"><img src="rssFilter/filter-add.png" class="addToFilterPic" alt="Add to filter"></a>', node);
-                });
+                });*/
             });
         });
 
@@ -35,11 +35,11 @@ require(['dojo/_base/kernel', 'dojo/ready'], function  (dojo, ready) {
 
         PluginHost.register(PluginHost.HOOK_INIT_COMPLETE, function() {
             // register custom hotkey actions
-            App.hotkey_actions["add_to_rssfilter"] = function() {
+/*            App.hotkey_actions["add_to_rssfilter"] = function() {
                 if (Article.getActive()) {
                     addToRSSFilter(Article.getActive());
                 }
-            };
+            };*/
         });
 
     })
