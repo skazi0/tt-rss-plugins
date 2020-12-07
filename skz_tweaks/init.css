@@ -1,0 +1,27 @@
+html body.ttrss_main {
+    /* overall font style */
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+body.ttrss_main .hl {
+    /* disable gray background for read items*/
+    background: inherit;
+}
+
+body.ttrss_main .hl .left {
+    /* compact item list */
+    padding: 0;
+}
+
+body.ttrss_main .hl .title a.title {
+    /* remove bold from read items */
+    font-weight: normal;
+    /* remove link underlines */
+    text-decoration: none;
+}
+
+body.ttrss_main .hl.Unread .title a.title {
+    /* re-add bold to unread items */
+    font-weight: bold;
+}
